@@ -608,7 +608,10 @@ const funcionariosPorSlide = 3;
 function mostrarFuncionarios(index) {
     const slidesContainer = document.getElementById('equipe-slides');
     slidesContainer.innerHTML = '';
-    for (let i = 0; i < funcionariosPorSlide; i++) {
+    // Detecta se está em mobile
+    const isMobile = window.innerWidth <= 700;
+    const quantidade = isMobile ? 1 : funcionariosPorSlide;
+    for (let i = 0; i < quantidade; i++) {
         const idx = (index + i) % funcionarios.length;
         const funcionario = funcionarios[idx];
         const slide = document.createElement('div');
@@ -621,6 +624,9 @@ function mostrarFuncionarios(index) {
         slidesContainer.appendChild(slide);
     }
 }
+
+// Atualiza ao redimensionar a tela
+window.addEventListener('resize', () => mostrarFuncionarios(funcionarioIndex));
 
 // Função para animar o carrossel
 function animarCarrosselEquipe(direcao) {
