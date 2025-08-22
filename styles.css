@@ -366,7 +366,7 @@ main {
 
 .sobre-imagem {
     width: 100%;
-    height: 620px;
+    height: 700px;
     object-fit: cover;
     display: block;
     border-radius: 18px;
@@ -751,6 +751,7 @@ main {
 .equipe {
     background: #111;
     padding: 1px 0;
+    padding-bottom: 100px;
 }
 
 
@@ -819,24 +820,104 @@ main {
     letter-spacing: 0.5px;
 }
 
-/* Responsivo */
+/* NOVO CÓDIGO - CARROSSEL EQUIPE */
+.equipe-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.equipe-slides {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe-slide-multi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #181818;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(224,185,115,0.10), 0 1.5px 8px rgba(0,0,0,0.10);
+    padding: 28px 24px 18px 24px;
+    min-width: 200px;
+    max-width: 220px;
+    transition: transform 0.22s, box-shadow 0.22s;
+    border: 2px solid #222;
+}
+
+.equipe-slide-multi:hover {
+    transform: translateY(-10px) scale(1.045);
+    box-shadow: 0 8px 32px rgba(224,185,115,0.18), 0 2px 12px rgba(0,0,0,0.13);
+    border-color: #e0b973;
+}
+
+.equipe-img-multi {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e0b973;
+    background: #fff;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(224,185,115,0.10);
+    transition: border-color 0.2s;
+}
+
+.equipe-legenda-multi {
+    font-size: 1.13rem;
+    font-weight: 700;
+    color: #e0b973;
+    margin-top: 8px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px #00000022;
+}
+
+.equipe-nav {
+    background: #222;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    color: #e0b973;
+    box-shadow: 0 2px 8px rgba(224,185,115,0.10);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe-nav:hover {
+    background: #e0b973;
+    color: #181818;
+    box-shadow: 0 4px 16px rgba(224,185,115,0.18);
+}
+
 @media (max-width: 900px) {
-    .equipe-container {
-        padding: 0 16px;
+    .equipe-slides {
+        gap: 16px;
     }
-    .equipe-imagens {
-        flex-direction: column;
-        gap: 24px;
-        align-items: center;
+    .equipe-slide-multi {
+        min-width: 120px;
+        max-width: 140px;
+        padding: 12px 6px 8px 6px;
     }
-    .equipe-img-bloco {
-        width: 100%;
-        max-width: 340px;
+    .equipe-img-multi {
+        width: 70px;
+        height: 70px;
     }
-    .equipe-img {
-        height: 180px;
+    .equipe-legenda-multi {
+        font-size: 0.95rem;
     }
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -1494,4 +1575,44 @@ html {
         margin: 0 auto !important;
         display: inline-block;
     }
+}
+
+/* Animação de deslize para o carrossel da equipe */
+.equipe-slides.animando-esquerda {
+    animation: slideLeftEquipe 0.45s cubic-bezier(.77,0,.18,1);
+}
+.equipe-slides.animando-direita {
+    animation: slideRightEquipe 0.45s cubic-bezier(.77,0,.18,1);
+}
+
+@keyframes slideLeftEquipe {
+    0% { transform: translateX(0); opacity: 1; }
+    40% { transform: translateX(-60px); opacity: 0.7; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideRightEquipe {
+    0% { transform: translateX(0); opacity: 1; }
+    40% { transform: translateX(60px); opacity: 0.7; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.equipe-nome-multi {
+    font-size: 1.13rem;
+    font-weight: 700;
+    color: #e0b973;
+    margin-top: 8px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px #00000022;
+    display: block;
+}
+
+.equipe-cargo-multi {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 2px;
+    text-align: center;
+    display: block;
+    opacity: 0.85;
 }

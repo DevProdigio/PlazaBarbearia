@@ -86,25 +86,20 @@
                 </div>
             </div>
             <div class="sobre-imagem-container">
-                <img src="imagens/unidade1.webp" alt="Fachada Plaza Barbearia" class="sobre-imagem">
+                <img src="imagens/unidade1-nova.jpg" alt="Fachada Plaza Barbearia" class="sobre-imagem">
             </div>
         </section>
         <section class="equipe scroll-reveal" id="equipe">
-        <div class="equipe-container">
-            <h2 class="equipe-titulo">Nossa Equipe</h2>
-            <p class="equipe-subtitulo">Profissionais apaixonados por transformar o seu visual e proporcionar uma experiência única. Liderados por quem entende de excelência!</p>
-            <div class="equipe-imagens">
-                <div class="equipe-img-bloco">
-                    <img src="imagens/equipe1.webp" alt="Equipe Plaza Barbearia" class="equipe-img">
-                    <span class="equipe-legenda">Equipe</span>
-                </div>
-                <div class="equipe-img-bloco">
-                    <img src="imagens/CEO.webp" alt="Dono Plaza Barbearia" class="equipe-img">
-                    <span class="equipe-legenda">Fundador</span>
-                </div>
-            </div>
+    <div class="equipe-container">
+        <h2 class="equipe-titulo">Nossa Equipe</h2>
+        <p class="equipe-subtitulo">Profissionais apaixonados por transformar o seu visual e proporcionar uma experiência única. Liderados por quem entende de excelência!</p>
+        <div class="equipe-carrossel">
+            <button class="equipe-nav prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+            <div class="equipe-slides" id="equipe-slides"></div>
+            <button class="equipe-nav next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
         </div>
-    </section>
+    </div>
+</section>
         <section class="servicos scroll-reveal" id="servicos">
             <div class="servicos-container">
                 <h2>Serviços</h2>
@@ -131,17 +126,17 @@
                         <p>Transforme seu visual com nossos tratamentos químicos.</p>
                     </div>
                     <div class="servico-item">
-                        <img src="imagens/podologia_manicure.webp" alt="Podologia e Manicure">
+                        <img src="imagens/manicure.jpg" alt="Manicure e Pedicure">
                         <h3>Manicure e Pedicure</h3>
                         <p>Cuidados completos para mãos e pés.</p>
                     </div>
                     <div class="servico-item">
-                        <img src="imagens/dia_do_noivo.webp" alt="Dia do Noivo">
+                        <img src="imagens/barba-terapia.jpg" alt="Dia do Noivo">
                         <h3>Barboterapia</h3>
                         <p>Tratamento completo para barba e relaxamento</p>
                     </div>
                     <div class="servico-item">
-                        <img src="imagens/limpeza_de_pele.jpg" alt="Limpeza de Pele">
+                        <img src="imagens/limpeza_pele.jpg" alt="Limpeza de Pele">
                         <h3>Limpeza de pele</h3>
                         <p>Tratamento completo para limpeza e rejuvenescimento da pele.</p>
                     </div>
@@ -164,67 +159,54 @@
             </div>
         </section>
         <section class="espaco scroll-reveal" id="espaco">
-        <div class="espaco-container">
-            <h2 class="espaco-titulo">Nosso Espaço</h2>
-            <p class="espaco-subtitulo">Conheça o ambiente moderno e confortável da Plaza Barbearia.</p>
-            
-            <div class="slider-container">
-                <div class="slider-wrapper">
-                    <div class="slide active">
-                        <img src="imagens/espaco1.webp" alt="Recepção Plaza Barbearia">
-                        <div class="slide-overlay">
-                            <h3 class="slide-title">Recepção Moderna</h3>
-                            <p class="slide-description">Um ambiente acolhedor para receber nossos clientes com todo conforto.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="slide">
-                        <img src="imagens/espaco2.webp" alt="Sala de espera Plaza Barbearia">
-                        <div class="slide-overlay">
-                            <h3 class="slide-title">Sala de Espera</h3>
-                            <p class="slide-description">Espaço confortável para relaxar enquanto aguarda seu atendimento.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="slide">
-                        <img src="imagens/espaco3.webp" alt="Ambiente interno Plaza Barbearia">
-                        <div class="slide-overlay">
-                            <h3 class="slide-title">Ambiente Profissional</h3>
-                            <p class="slide-description">Equipamentos modernos e ambiente preparado para oferecer o melhor serviço.</p>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="imagens/espaco4.webp" alt="Ambiente interno Plaza Barbearia">
-                        <div class="slide-overlay">
-                            <h3 class="slide-title">Ambiente Profissional</h3>
-                            <p class="slide-description">Equipamentos modernos e ambiente preparado para oferecer o melhor serviço.</p>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="imagens/espaco5.webp" alt="Ambiente interno Plaza Barbearia">
-                        <div class="slide-overlay">
-                            <h3 class="slide-title">Ambiente Profissional</h3>
-                            <p class="slide-description">Equipamentos modernos e ambiente preparado para oferecer o melhor serviço.</p>
-                        </div>
-                    </div>
-                    
+    <div class="espaco-container">
+        <h2 class="espaco-titulo">Nosso Espaço</h2>
+        <p class="espaco-subtitulo">Conheça o ambiente moderno e confortável da Plaza Barbearia.</p>
+        
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <img src="imagens/espaco1.webp" alt="Recepção Plaza Barbearia">
                 </div>
-                
-                <button class="slider-nav prev" onclick="changeSlide(-1)">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-nav next" onclick="changeSlide(1)">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <div class="slide">
+                    <img src="imagens/espaco2.webp" alt="Sala de espera Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco3.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco4.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco5.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco6.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco7.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco8.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
+                <div class="slide">
+                    <img src="imagens/espaco9.webp" alt="Ambiente interno Plaza Barbearia">
+                </div>
             </div>
             
-            <div class="slider-dots">
-                <!-- Os pontos serão gerados pelo JS -->
-            </div>
+            <button class="slider-nav prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-nav next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
-    </section>
+        
+        <div class="slider-dots">
+            <!-- Os pontos serão gerados pelo JS -->
+        </div>
+    </div>
+</section>
     <section class="depoimentos scroll-reveal" id="depoimentos">
         <div class="depoimentos-container">
             <div class="depoimentos-topo">
@@ -567,7 +549,7 @@ renderDepoimentos();
 const unidades = {
     centro: {
         mapa: "https://www.google.com/maps?q=-9.389634,-40.502684&z=16&output=embed",
-        imagem: "imagens/unidade1.webp",
+        imagem: "imagens/unidade1-nova.jpg",
         endereco: " Avenida da Integração, 126 b,Maria Auxiliadora, 56330-290"
     },
     bairro: {
@@ -598,6 +580,76 @@ document.querySelectorAll('.btn-unidade').forEach(btn => {
 document.addEventListener('DOMContentLoaded', function() {
     atualizarUnidade('centro');
 });
+
+// Carrossel da equipe
+const funcionarios = [
+    { nome: "Ciro Fraga", cargo: "Fundador", img: "imagens/funcionario1.jpg" },
+    { nome: "Andreia Fraga", cargo: "Gerente", img: "imagens/funcionario2.jpg" },
+    { nome: "Cleiton Rodrigues", cargo: "Barbeiro", img: "imagens/funcionario3.jpg" },
+    { nome: "Celso Ferreira", cargo: "Barbeiro", img: "imagens/funcionario4.jpg" },
+    { nome: "João Lucas", cargo: "Barbeiro", img: "imagens/funcionario5.jpg" },
+    { nome: "Débora França", cargo: "Manicure", img: "imagens/funcionario6.jpg" },
+    { nome: "Jairo Santos", cargo: "Barbeiro", img: "imagens/funcionario8.jpg" },
+    { nome: "Tibério Santos", cargo: "Barbeiro", img: "imagens/funcionario9.jpg" },
+    { nome: "Marcos Freitas", cargo: "Barbeiro", img: "imagens/funcionario10.jpg" },
+    { nome: "Wislly Pereira", cargo: "Barbeiro Lider", img: "imagens/funcionario11.jpg" },
+    { nome: "Cleidson Silva", cargo: "Barbeiro", img: "imagens/funcionario12.jpg" },
+    { nome: "Maria Auxiliadora", cargo: "Recepcionista", img: "imagens/funcionario13.jpg" },
+    { nome: "Thauane Ribeiro", cargo: "Recepcionista", img: "imagens/funcionario14.jpg" },
+    { nome: "Abraão Fraga", cargo: "Recepcionista", img: "imagens/funcionario15.jpg" },
+    { nome: "Samuel Fernandes", cargo: "Barbeiro", img: "imagens/funcionario16.jpg" },
+    { nome: "Mateus Mendes", cargo: "Barbeiro", img: "imagens/funcionario18.jpg" },
+    { nome: "Vinicius Alves", cargo: "Barbeiro Lider", img: "imagens/funcionario19.jpg" }
+];
+
+let funcionarioIndex = 0;
+const funcionariosPorSlide = 3;
+
+function mostrarFuncionarios(index) {
+    const slidesContainer = document.getElementById('equipe-slides');
+    slidesContainer.innerHTML = '';
+    for (let i = 0; i < funcionariosPorSlide; i++) {
+        const idx = (index + i) % funcionarios.length;
+        const funcionario = funcionarios[idx];
+        const slide = document.createElement('div');
+        slide.className = 'equipe-slide-multi';
+        slide.innerHTML = `
+            <img src="${funcionario.img}" alt="${funcionario.nome}" class="equipe-img-multi">
+            <span class="equipe-nome-multi">${funcionario.nome}</span>
+            <span class="equipe-cargo-multi">${funcionario.cargo}</span>
+        `;
+        slidesContainer.appendChild(slide);
+    }
+}
+
+// Função para animar o carrossel
+function animarCarrosselEquipe(direcao) {
+    const slidesContainer = document.getElementById('equipe-slides');
+    slidesContainer.classList.remove('animando-esquerda', 'animando-direita');
+    // Força reflow para reiniciar animação
+    void slidesContainer.offsetWidth;
+    slidesContainer.classList.add(direcao === 'esquerda' ? 'animando-esquerda' : 'animando-direita');
+    setTimeout(() => {
+        slidesContainer.classList.remove('animando-esquerda', 'animando-direita');
+    }, 450);
+}
+
+// Avança para o próximo grupo de 3
+document.querySelector('.equipe-nav.next').onclick = function() {
+    funcionarioIndex = (funcionarioIndex + funcionariosPorSlide) % funcionarios.length;
+    mostrarFuncionarios(funcionarioIndex);
+    animarCarrosselEquipe('direita');
+};
+
+// Volta para o grupo anterior de 3
+document.querySelector('.equipe-nav.prev').onclick = function() {
+    funcionarioIndex = (funcionarioIndex - funcionariosPorSlide + funcionarios.length) % funcionarios.length;
+    mostrarFuncionarios(funcionarioIndex);
+    animarCarrosselEquipe('esquerda');
+};
+
+// Inicializa com os primeiros funcionários
+mostrarFuncionarios(funcionarioIndex);
     </script>
 
     <footer class="footer">
